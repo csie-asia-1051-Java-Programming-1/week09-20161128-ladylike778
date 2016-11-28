@@ -5,10 +5,14 @@ package hw;
  * Date: 2016/11/28
  * Author: 1050210XX 周永振老師
  */
+import java.util.*;
+
 public class hw01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner scn=new Scanner(System.in);
+		int n=scn.nextInt();
 
 	}
 

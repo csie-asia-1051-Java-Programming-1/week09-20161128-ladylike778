@@ -7,11 +7,27 @@
  * Date: 2016/11/28
  * Author: 1050210XX 周永振老師
  */
-
+import java.util.*;
 public class ex01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int data[]=new int[6];
+		for(int i=0;i<6;i++){
+			
+		data[i]=(int)(Math.random()*42+1);
+		}
+		for(int i=0;i<6;i++){
+		for(int j=i+1;j<6;j++){
+			if(data[j]==data[i]){
+				data[i]=(int)(Math.random()*42+1);
+			}
+		}}
+			
+		
+		for(int k=0;k<data.length;k++){
+			System.out.print(data[k]+" ");
+		}
 
 	}
 
