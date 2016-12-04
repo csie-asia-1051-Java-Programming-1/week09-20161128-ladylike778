@@ -6,14 +6,47 @@ package hw;
  * Author: 1050210XX 周永振老師
  */
 import java.util.*;
-
 public class hw01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scn=new Scanner(System.in);
-		int n=scn.nextInt();
-
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt(),i=0,a=0,j=0;
+		boolean flag=true;
+		while(flag){
+			int sum=0;
+			if(n%2==0){
+				for(j=a;j<=n/2;j++){
+					sum+=j;
+					//System.out.println("sum= "+sum+" a= "+a+" j= "+j);
+					if(sum==n){
+						System.out.println("Yes!");
+						flag=false;
+					}
+				}
+				a++;
+				//System.out.println("  a= "+a);
+				if(a>=n){
+					System.out.println("No!!!");
+					flag=false;
+				}
+			}else{
+				for(j=a;j<=n/2+1;j++){
+					sum+=j;
+					//System.out.println("sum= "+sum);
+					if(sum==n){
+						System.out.println("Yes!");
+						flag=false;
+					}
+				}
+				a++;
+				//System.out.println("  a= "+a);
+				if(a>=n){
+					System.out.println("No!!!");
+					flag=false;
+				}
+			}
+		}
 	}
 
 }
